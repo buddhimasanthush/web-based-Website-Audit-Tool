@@ -1,0 +1,58 @@
+{
+  "description": "Example output from auditing https://example.com",
+  "metrics": {
+    "url": "https://example.com",
+    "word_count": 42,
+    "headings": {
+      "h1": 1,
+      "h2": 0,
+      "h3": 0
+    },
+    "cta_count": 1,
+    "internal_links": 0,
+    "external_links": 1,
+    "images": {
+      "total": 0,
+      "missing_alt": 0,
+      "missing_alt_percentage": 0
+    },
+    "meta": {
+      "title": "Example Domain",
+      "description": ""
+    }
+  },
+  "aiAnalysis": {
+    "seo_analysis": "The page has a single H1 heading ('Example Domain') which is good for SEO hierarchy. However, there are no H2 or H3 headings, indicating a flat content structure. The meta title exists ('Example Domain') but meta description is missing entirely, which will hurt search engine click-through rates. With only 42 words of visible content, this page has minimal text for search engines to index.",
+    "messaging_clarity": "The page messaging is extremely minimal — only 42 words. The single heading 'Example Domain' provides no value proposition or clear messaging. There is no supporting content to establish credibility, purpose, or user value.",
+    "cta_analysis": "There is 1 CTA element detected (a 'More information...' link). For a page with so little content, the CTA-to-content ratio is reasonable, but the CTA text 'More information...' is vague and doesn't convey urgency or specific value.",
+    "content_depth": "With only 42 words, this page has virtually no content depth. There are no subheadings (H2/H3), no images, and no structured content sections. This is well below the recommended 300+ words for meaningful SEO content.",
+    "ux_issues": "The page has 0 images, which creates a text-heavy (though minimal) experience. There are no internal links, meaning users have no navigation path within the site. The single external link is the only interactive element.",
+    "recommendations": [
+      {
+        "priority": "high",
+        "recommendation": "Add a meta description tag to the page",
+        "reason": "The meta description is completely missing. This is a critical SEO element that directly affects click-through rates from search results."
+      },
+      {
+        "priority": "high",
+        "recommendation": "Expand page content to at least 300 words with structured headings",
+        "reason": "Current word count is only 42, with 0 H2/H3 headings. Search engines favor content-rich pages with clear topical hierarchy."
+      },
+      {
+        "priority": "medium",
+        "recommendation": "Add internal navigation links",
+        "reason": "There are 0 internal links on the page. Internal linking improves both user navigation and search engine crawlability."
+      },
+      {
+        "priority": "medium",
+        "recommendation": "Replace vague CTA with action-oriented text",
+        "reason": "The single CTA uses generic 'More information...' text. Specific, action-oriented CTAs (e.g., 'Get Started', 'Learn More About X') drive higher engagement."
+      },
+      {
+        "priority": "low",
+        "recommendation": "Add relevant images with descriptive alt text",
+        "reason": "The page has 0 images. Adding relevant visuals improves user engagement and provides additional SEO signals through alt text."
+      }
+    ]
+  }
+}
